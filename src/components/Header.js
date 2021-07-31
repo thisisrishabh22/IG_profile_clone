@@ -4,19 +4,20 @@ import "../App.css";
 export const Header = (props) => {
   const [searchClick, setSearchClick] = useState(false);
 
+  const searchNotClicked = () => {
+    return (
+      <div className="search-div">
+        <i class="fas fa-search"></i>
+        <span>Search</span>
+      </div>
+    );
+  };
   return (
     <div className="header">
       <div className="logo">
         <img className="top-logo" src={props.logo} alt="" />
       </div>
-      <div className="search">
-        {
-          <div className="search-div">
-            <i class="fas fa-search"></i>
-            <span>Search</span>
-          </div>
-        }
-      </div>
+      <div className="search">{ searchNotClicked() }</div>
       <div className="nav">
         <div className="wrapper">
           <svg

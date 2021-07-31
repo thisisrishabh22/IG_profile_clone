@@ -6,18 +6,29 @@ export const Header = (props) => {
 
   const searchNotClicked = () => {
     return (
-      <div className="search-div">
+      <div className="search" onClick={()=>{setSearchClick(!searchClick)}}>
+        <div className="search-div" >
         <i class="fas fa-search"></i>
         <span>Search</span>
       </div>
+      </div>
     );
+  };
+
+  const searchClicked = () => {
+      return(
+          <div className="search-div active" >
+              <input type="text" placeholder="search" name="" id=""/>
+              <div className="overlay" onClick={()=>{setSearchClick(!searchClick)}}></div>
+          </div>
+      );
   };
   return (
     <div className="header">
       <div className="logo">
         <img className="top-logo" src={props.logo} alt="" />
       </div>
-      <div className="search">{ searchNotClicked() }</div>
+      <div className="searchContainer">{searchClick ? searchClicked() : searchNotClicked()}</div>
       <div className="nav">
         <div className="wrapper">
           <svg

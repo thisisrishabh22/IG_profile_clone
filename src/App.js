@@ -6,7 +6,7 @@ import Main from './components/Main.js';
 
 function App() {
   useEffect(()=>{
-    document.title = "Rishabh Singh | Frontend Dev";
+    document.title = "Rishabh Singh | Frontend Dev (@thefrontendrish) • Instagram photos and videos";
   })
   return (
    <>

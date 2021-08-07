@@ -1,10 +1,18 @@
-import React from "react";
+import React ,{useState} from "react";
 
 const Menu = () => {
+  const [isPostClicked, setIsPostClicked] = useState(true);
+  
+  const boldColor={
+    color : "#0000"
+  }
+  const lightColor={
+    color: "#8e8e8e"    
+  }
   return (
     <div className="menu">
       <div className="menuDiv">
-        <div className="postDisplay active">
+        <div onClick={()=>{setIsPostClicked(true)}} className={isPostClicked ? "postDisplay active" : "postDisplay"}>
           <svg
             aria-label=""
             fill="#262626"
@@ -26,10 +34,10 @@ const Menu = () => {
           </span>
         </div>
 
-        <div className="tagsDisplay" style={{color:"#8e8e8e"}}>
+        <div onClick={()=>{setIsPostClicked(false)}} className={isPostClicked ? "tagsDisplay" : "tagsDisplay active"} >
           <svg
             aria-label=""
-            fill="#8e8e8e"
+            fill={isPostClicked ? "#8e8e8e" : "#262626"}
             height="12"
             role="img"
             viewBox="0 0 48 48"

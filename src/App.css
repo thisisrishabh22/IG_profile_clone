@@ -246,11 +246,35 @@
 .post .postDisplay, .post .tagsDisplay{
   padding: 1rem 1rem;  
 }
+.menu{
+  margin-bottom: 1rem;
+}
 .menu .active{
   border-top: #262626 solid 0.3px;
+}
+.menuDiv span {
+  color: "#8e8e8e" !important;
+}
+.menu .active span{
+  color: "#000";
 }
 /* Menu */
 .menuDiv{
   display: flex;
   justify-content: center;
+}
+.postDisplay , .tagsDisplay{
+  display: flex;
+  cursor: pointer;
+}
+.postDisplay svg , .postDisplay span , .tagsDisplay svg , .tagsDisplay span{ 
+  margin: auto;
+}
+.post-row{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+.post-row img{
+  max-width: 293px;
 }

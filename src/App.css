@@ -1,8 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-.header{
+.header {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -15,19 +15,19 @@
   z-index: 9999;
   background: #fff;
 }
-.header .logo{
+.header .logo {
   display: flex;
 }
-.header .top-logo{
+.header .top-logo {
   width: 8rem;
   margin-top: auto;
   margin-bottom: auto;
 }
-.header .searchContainer{
+.header .searchContainer {
   display: flex;
   margin: auto 0;
 }
-.header .search{
+.header .search {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -44,7 +44,7 @@
   cursor: text;
   max-width: 209px;
 }
-.header .search-div.active input{
+.header .search-div.active input {
   width: 180px;
   border: #dbdbdb solid 0.2px;
   outline: none;
@@ -56,7 +56,7 @@
   font-weight: 200;
   font-size: 16px;
 }
-.header .search-div.active .overlay{
+.header .search-div.active .overlay {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -67,52 +67,58 @@
   color: #8e8e8e;
   font-weight: 300;
 }
-.header .search-div{
+.header .search-div {
   display: flex;
   flex-direction: row;
 }
-.header .search span{
+.header .search span {
   font-size: 14px;
   margin-left: 0.5rem;
   margin-top: auto;
   margin-bottom: auto;
 }
-.header .search .fas{
+.header .search .fas {
   font-size: 10px;
   margin-top: auto;
   margin-bottom: auto;
   opacity: 0.8;
 }
-.header .nav{
+.header .nav {
   font-size: 1.8rem;
   display: flex;
   margin-top: auto;
   margin-bottom: auto;
 }
-.header .nav .wrapper{
+.header .nav .wrapper {
   display: flex;
   flex-direction: row;
 }
-.header .nav svg{
+.header .nav svg {
   margin-left: 0.7rem;
   margin-right: 0.7rem;
 }
 
 /* Info section Styling */
-.info{
+.info {
   margin-top: 3.4rem;
   z-index: 990;
 }
-.info .wrapper{
+.info .wrapper {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3.5rem;
 }
-.info .pp-div{
+.info .pp-div {
   width: 40%;
 }
-.info .pp-div .border{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%);
+.info .pp-div .border {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%
+  );
   border-radius: 50%;
   padding: 2.6px;
   display: flex;
@@ -121,32 +127,32 @@
   width: 160.19px;
   height: 160.19px;
 }
-.info .pp-div .white{
+.info .pp-div .white {
   display: flex;
   margin: auto;
   padding: 5px;
   border-radius: 50%;
   background: #fff;
 }
-.info .pp-div img{
+.info .pp-div img {
   width: 150px;
   border-radius: 50%;
 }
-.info .details-div{
+.info .details-div {
   width: 60%;
 }
-.info .user-div{
+.info .user-div {
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-.info .user-div h2{
+.info .user-div h2 {
   font-size: 28px;
   font-weight: 300;
   margin-right: 1rem;
 }
-.info .user-div .box.follow{
+.info .user-div .box.follow {
   background: #0095f6;
   color: #fff;
   padding: 5px 9px;
@@ -156,13 +162,13 @@
   max-width: 61.67px;
   text-align: center;
 }
-.info .user-div .box{
+.info .user-div .box {
   font-size: 14px;
   font-weight: 500;
   border-radius: 4px;
   margin-top: auto;
   margin-bottom: auto;
-  border: solid 1px rgba(219,219,219, 1);
+  border: solid 1px rgba(219, 219, 219, 1);
   padding: 5px 9px;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
@@ -175,106 +181,113 @@
   width: 30px;
   padding: 0 12px;
 } */
-.info .user-div .rotate svg{
+.info .user-div .rotate svg {
   transform: rotate(180deg);
 }
-.info .user-div .dots{
+.info .user-div .dots {
   margin-top: auto;
   margin-bottom: auto;
 }
-.info .FollowDiv{
+.info .FollowDiv {
   display: flex;
   margin-top: 1rem;
 }
-.info .FollowDiv p{
+.info .FollowDiv p {
   margin-right: 2rem;
 }
-.info .FollowDiv .FollowBold{
+.info .FollowDiv .FollowBold {
   font-weight: 500;
   margin-right: 0.34rem;
 }
-.info .Name{
+.info .Name {
   font-weight: 500;
   margin-top: 1.3rem;
 }
-.info .Position{
+.info .Position {
   color: #8e8e8e;
   margin-top: 0.2rem;
 }
-.info .Bio{
+.info .Bio {
   line-height: 24px;
 }
-.info .WebLink{
+.info .WebLink {
   color: #00376b;
   text-decoration: none;
   font-weight: 500;
   margin-top: 1.8rem;
 }
-.Highlights{
+.Highlights {
   display: flex;
   padding: 1.2rem;
 }
-.Highlights .Highlight{
+.Highlights .Highlight {
   margin-left: 15%;
   display: flex;
   flex-direction: column;
 }
-.Highlights .HighlightsImg{
+.Highlights .HighlightsImg {
   padding: 3px;
   display: flex;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.23);
 }
-.Highlights img{
+.Highlights img {
   width: 77px;
   border-radius: 50%;
   margin: auto;
 }
-.Highlights p{
+.Highlights p {
   font-weight: 500;
   font-size: 14px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.6rem; 
+  margin-top: 0.6rem;
 }
 
 /* Post */
-.post{
-  margin: 0 10rem;
+.post {
+  margin: 0 10%;
   border-top: 0.3px solid rgba(0, 0, 0, 0.2);
 }
-.post .postDisplay, .post .tagsDisplay{
-  padding: 1rem 1rem;  
+.post .postDisplay,
+.post .tagsDisplay {
+  padding: 1rem 1rem;
 }
-.menu{
+.menu {
   margin-bottom: 1rem;
 }
-.menu .active{
+.menu .active {
   border-top: #262626 solid 0.3px;
 }
 .menuDiv span {
   color: "#8e8e8e" !important;
 }
-.menu .active span{
+.menu .active span {
   color: "#000";
 }
 /* Menu */
-.menuDiv{
+.menuDiv {
   display: flex;
   justify-content: center;
 }
-.postDisplay , .tagsDisplay{
+.postDisplay,
+.tagsDisplay {
   display: flex;
   cursor: pointer;
 }
-.postDisplay svg , .postDisplay span , .tagsDisplay svg , .tagsDisplay span{ 
+.postDisplay svg,
+.postDisplay span,
+.tagsDisplay svg,
+.tagsDisplay span {
   margin: auto;
 }
-.post-row{
+.post-row {
   display: flex;
   justify-content: space-evenly;
   margin: 1rem 0;
 }
-.post-row img{
+.post-row img {
   max-width: 293px;
+  max-height: 293px;
+  width: 100%;
 }

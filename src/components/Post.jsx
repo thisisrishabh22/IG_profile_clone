@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import Menu from './Menu';
 import post1Img from '../img/post-1.png';
 import post2Img from '../img/post-2.png';
@@ -15,24 +15,24 @@ export const Post = () => {
             <div className="postContainer">
                 <div className="post-row">
                     <div className="postWrapper">
-                        <img src={post6Img} alt=""/>
+                        <img src={post6Img} alt="" />
                     </div>
                     <div className="postWrapper">
-                        <img src={post5Img} alt=""/>
+                        <img src={post5Img} alt="" />
                     </div>
                     <div className="postWrapper">
-                        <img src={post4Img} alt=""/>
+                        <img src={post4Img} alt="" />
                     </div>
                 </div>
                 <div className="post-row">
                     <div className="postWrapper">
-                        <img src={post3Img} alt=""/>
+                        <img src={post3Img} alt="" />
                     </div>
                     <div className="postWrapper">
-                        <img src={post2Img} alt=""/>
+                        <img src={post2Img} alt="" />
                     </div>
                     <div className="postWrapper">
-                        <img src={post1Img} alt=""/>
+                        <img src={post1Img} alt="" />
                     </div>
                 </div>
             </div>
